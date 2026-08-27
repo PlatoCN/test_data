@@ -1,0 +1,50 @@
+name: Fetch NOAA All ENCs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Download NOAA All ENCs
+        run: |
+          set -euxo pipefail
+
+          curl -L --fail \
+            --retry 8 \
+            --retry-delay 10 \
+            --retry-all-errors \
+            -o All_ENCs.zip \
+            https://charts.noaa.gov/ENCs/All_ENCs.zip
+
+          ls -lh All_ENCs.zip
+          sha256sum All_ENCs.zip > All_ENCs.zip.sha256
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+
+          TAG="noaa-all-encs"
+
+          if gh release view "$TAG" \
+               --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release delete "$TAG" \
+              --repo "$GITHUB_REPOSITORY" \
+              --yes \
+              --cleanup-tag
+          fi
+
+          gh release create "$TAG" \
+            All_ENCs.zip \
+            All_ENCs.zip.sha256 \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "NOAA All ENCs" \
+            --notes "NOAA ENC mirror for software performance testing."
