@@ -1,0 +1,42 @@
+NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY
+US4PE3W0 - PANAMA - APPROACH TO GOLFO DE SAN BLAS AND PUNTA SAN BLAS TO PUNTA BRAVA
+ 
+INDEX:
+GLOSSARY
+POSITIONS
+CHART ACCURACY
+CAUTION
+TIDAL INFORMATION
+SUPPLEMENTAL INFORMATION
+
+NOTES: 
+GLOSSARY:
+Bahia ... bay
+Boca ... bay, cove
+Bajo ... shoal, reef
+Banco ... shoal
+Canal ... channel
+Cayo(s) ... island(s)
+Ensenada ... bay, cove, inlet
+Golfo ... bay, gulf
+Isla(s) ... island(s)
+Playon ... beach
+Punta ... cape, point
+Rio ... stream
+
+POSITIONS:
+This ENC cell has been positioned on WGS-84 datum through the use of rectified Ortho-photo of 2011.
+
+CHART ACCURACY:
+Owing to the age and quality of the source information, some detail on this chart may not be positioned accurately. Particular caution is advised when navigating in the vicinity of dangers, even when using an electronic positioning system such as GPS.
+
+CAUTION:
+Areas of this chart were compiled from old surveys and undetected shoals may exist. Mariners are warned to exercise due caution when navigating in these waters.
+
+TIDAL INFORMATION:
+Refer to Admiralty Total Tides Program for the latest information.
+
+SUPPLEMENTAL INFORMATION:
+Consult National Geospatial-Intelligence Agency Pub. 148, Sailing Directions, for important supplemental information. 
+
+END OF FILE

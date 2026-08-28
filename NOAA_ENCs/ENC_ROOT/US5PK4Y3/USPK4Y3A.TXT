@@ -1,0 +1,54 @@
+NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY
+US5PK4Y3 - HAITI - PEPILLO SALCEDO AND BAIE DE FORT LIBERTE
+ 
+INDEX:
+GLOSSARY
+CAUTION - QUALITY OF BATHYMETRIC DATA
+POSITIONS
+IMAGERY
+CAUTION 1
+CAUTION 2
+CAUTION 3 - OIL AND GAS PIPELINES
+TIDAL INFORMATION
+SUPPLEMENTAL INFORMATION
+
+NOTES: 
+GLOSSARY:
+Arroyo ... stream
+Baie ... bay
+Cano ... tidal creek
+Ensenada ... bay, cove, inlet
+Estero .... estuary
+Islote ... island
+Playa ... beach
+Pointe ... point
+Punta ... point
+Rio ... stream
+Riviere ... river
+Roche ... rock
+
+CAUTION - QUALITY OF BATHYMETRIC DATA
+The Quality of data (M_QUAL) area(s) in this cell and their Category of Zone of Confidence (CATZOC) levels are estimated. The CATZOC attribute of M_QUAL is considered to have uniform quality across the data area. Mariners are cautioned that all M_QUAL areas and CATZOC levels are generalized and caution is advised when navigating near the limits of these areas, particularly for nearshore navigation or voyage planning. 
+
+POSITIONS:
+This cell has been positioned on the WGS-84 Datum through the use of a Rectified Ortho-photo.
+
+IMAGERY: 
+Commercial imagery (JUL 2023, FEB 2024, JAN 2025 FEB 2025) was used to compile certain features within this cell. 
+
+CAUTION 1:
+Use this chart with caution as considerable changes in many places have been reported (1942).
+
+CAUTION 2:
+Lights in Haiti have been reported extinguished or unreliable and buoys are frequently out of position.
+
+CAUTION 3 - OIL AND GAS PIPELINES
+Mariners are advised not to anchor or trawl in the vicinity of pipelines. Gas from a damaged pipeline could cause an explosion, loss of a vessel's buoyancy or some other serious hazard. Pipelines are not always buried and their presence may effectively reduce the charted depth.
+
+TIDAL INFORMATION:
+Refer to Admiralty Total Tides Program for the latest information.
+
+SUPPLEMENTAL INFORMATION:
+Consult National Geospatial-Intelligence Agency Pub. 147, Sailing Directions, for important supplemental information. 
+
+END OF FILE

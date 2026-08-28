@@ -1,0 +1,69 @@
+NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY
+US4PK4Y0 - HAITI - MANZANILO BAY
+ 
+INDEX:
+GLOSSARY
+CAUTION 1 - QUALITY OF BATHYMETRIC DATA
+POSITIONS
+ANCHORAGE NOTE
+CAUTION 2
+CAUTION 3 - OIL AND GAS PIPELINES
+TIDAL INFORMATION
+SUPPLEMENTAL INFORMATION
+
+NOTES: 
+GLOSSARY:
+Anse ... bay
+Arroyo ... stream
+Bahia ... bay
+Baie ... bay, cove, lagoon
+Bajo ... shoal
+Banco ... bank
+Canal ... drainage canal
+Cano ... stream, tidal creek, lagoon
+Carreterra ... road
+Caye ... reef
+Cayo(s) ... reef(s), rock(s)
+Chenal ... marine channel
+Ensenada ... bay, cove, inlet
+Estero ... inlet, lagoon
+Ferrocarril ... railroad
+Ile ... island, rock
+Ilet ... island, rock
+Ilot ... island
+Isla ... island
+Islote ... island, rock
+Lagon ... lake
+Laguna ... lake
+Morne(s) ... headland, hill, mountain, ridge
+Passe ... channel, inlet
+Plantation ... estate
+Playa ... beach
+Pointe ... point, cape
+Punta ... cape, point
+Recif ... reef
+Rio ... stream
+Riviere ... stream
+
+CAUTION 1 - QUALITY OF BATHYMETRIC DATA:
+The Quality of data (M_QUAL) area(s) in this cell and their Category of Zone of Confidence (CATZOC) levels are estimated. The CATZOC attribute of M_QUAL is considered to have uniform quality across the data area. Mariners are cautioned that all M_QUAL areas and CATZOC levels are generalized and caution is advised when navigating near the limits of these areas, particularly for nearshore navigation or voyage planning.
+
+POSITIONS:
+This cell has been positioned on the WGS-84 Datum through the use of a Rectified Ortho-photo.
+
+ANCHORAGE NOTE:
+Vessels may only anchor in charted anchorages as designated by the Dominican Republic Naval Authority. See Sailing Directions. Mariners should contact local authorities for more detailed information.
+
+CAUTION 2:
+Lights in Haiti have been reported extinguished or unreliable and buoys are frequently out of position.
+
+CAUTION 3 - OIL AND GAS PIPELINES
+Mariners are advised not to anchor or trawl in the vicinity of pipelines. Gas from a damaged pipeline could cause an explosion, loss of a vessel's buoyancy or some other serious hazard. Pipelines are not always buried and their presence may effectively reduce the charted depth.
+
+TIDAL INFORMATION:
+Refer to Admiralty Total Tides Program for the latest information.
+
+SUPPLEMENTAL INFORMATION:
+Consult National Geospatial-Intelligence Agency Pub. 147, Sailing Directions, for important supplemental information. 
+
+END OF FILE
