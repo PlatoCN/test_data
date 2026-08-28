@@ -1,4 +1,4 @@
-name: Fetch NOAA All ENCs
+name: Fetch and Extract NOAA All ENCs
 
 on:
   workflow_dispatch:
@@ -12,6 +12,11 @@ jobs:
     timeout-minutes: 120
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Download NOAA All ENCs
         run: |
           set -euxo pipefail
@@ -35,7 +40,7 @@ jobs:
           TAG="noaa-all-encs"
 
           if gh release view "$TAG" \
-               --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+              --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release delete "$TAG" \
               --repo "$GITHUB_REPOSITORY" \
               --yes \
@@ -48,3 +53,54 @@ jobs:
             --repo "$GITHUB_REPOSITORY" \
             --title "NOAA All ENCs" \
             --notes "NOAA ENC mirror for software performance testing."
+
+      - name: Extract NOAA ENC files
+        run: |
+          set -euxo pipefail
+
+          rm -rf NOAA_ENCs
+          mkdir NOAA_ENCs
+
+          unzip -q All_ENCs.zip -d NOAA_ENCs
+
+          echo "========== Extract result =========="
+          du -sh NOAA_ENCs
+
+          echo "File count:"
+          find NOAA_ENCs -type f | wc -l
+
+          echo "ENC base cell count:"
+          find NOAA_ENCs -type f -name "*.000" | wc -l
+
+          echo "========== Large file check =========="
+
+          LARGE_FILES=$(find NOAA_ENCs -type f -size +95M -print)
+
+          if [ -n "$LARGE_FILES" ]; then
+            echo "Files larger than 95 MB:"
+            echo "$LARGE_FILES"
+            exit 1
+          fi
+
+      - name: Commit extracted ENC files
+        run: |
+          set -euxo pipefail
+
+          # ZIP 继续保存在 Release，不提交到 Git 仓库
+          rm -f All_ENCs.zip
+          rm -f All_ENCs.zip.sha256
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A NOAA_ENCs
+
+          if git diff --cached --quiet; then
+            echo "No ENC changes."
+            exit 0
+          fi
+
+          git commit -m "Add extracted NOAA ENC test data"
+
+          git push origin HEAD:main
